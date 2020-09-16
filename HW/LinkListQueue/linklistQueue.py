@@ -8,12 +8,13 @@ class queue:
         self.front = self.rear = None
     
     def enQueue(self, item):
+        tmp = node(item)
         if self.rear == None:
-            self.front = self.rear = node(item)
-        self.rear = node(item)
-        if self.front.next == None:
-            self.front.next = node(item)
-
+            self.front = self.rear = tmp
+            return
+        self.rear.next = tmp
+        self.rear = tmp
+        
     def deQueue(self):
         if self.front == None:
             return
@@ -22,11 +23,23 @@ class queue:
         if self.front == None:
             self.rear = None
 
+    def showQueue(self):
+        tmp = self.front
+        idx = 0
+        queue = []
+        while tmp.data:
+            #queue.insert(idx, tmp.data)
+            print(tmp.data)
+            tmpp = tmp
+            tmp = tmpp.next
+        print(queue)
+
 if __name__ == '__main__':
     q = queue()
-    q.enQueue(1)
-    q.enQueue(2)
     q.enQueue(3)
+    q.enQueue(5)
+    q.enQueue(2)
     q.deQueue()
-    print(q.front.data)
-    print(q.rear.data)
+    print('q.front.data', q.front.data)
+    print('q.rear.data', q.rear.data)
+    q.showQueue()
