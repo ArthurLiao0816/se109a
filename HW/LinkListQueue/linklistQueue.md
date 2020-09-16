@@ -1,5 +1,9 @@
 # Queue implementation using linked list
 ---
+> 參考資料：
+>> https://www.geeksforgeeks.org/queue-linked-list-implementation/<br>
+>> https://hackmd.io/@Zero871015/B1DYRkeaQ?type=view#Implementation-for-Queue-by-Linked-List<br>
+>> https://hackmd.io/@Zero871015/H12vTu8aX?type=view
 
 ## 鏈結串列的性質
 * 火車，每節車廂(節點)都有乘客(資料)跟連結下個車廂的勾勾(指標)
