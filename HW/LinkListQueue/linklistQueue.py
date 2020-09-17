@@ -37,7 +37,7 @@ class queue:
 if __name__ == '__main__':
     q = queue()
     q.enQueue(2)
-    q.enQueue(9)
+    q.enQueue(8)
     q.enQueue(4)
     q.enQueue(8)
     q.enQueue(7)
