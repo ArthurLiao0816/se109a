@@ -25,20 +25,23 @@ class queue:
 
     def showQueue(self):
         tmp = self.front
-        idx = 0
         queue = []
         while tmp.data:
-            #queue.insert(idx, tmp.data)
-            print(tmp.data)
+            queue.append(tmp.data)
             tmpp = tmp
+            if tmpp.next == None:
+                break
             tmp = tmpp.next
-        print(queue)
+        print("queue ->", queue)
 
 if __name__ == '__main__':
     q = queue()
-    q.enQueue(3)
-    q.enQueue(5)
     q.enQueue(2)
+    q.enQueue(9)
+    q.enQueue(4)
+    q.enQueue(8)
+    q.enQueue(7)
+    q.deQueue()
     q.deQueue()
     print('q.front.data', q.front.data)
     print('q.rear.data', q.rear.data)
