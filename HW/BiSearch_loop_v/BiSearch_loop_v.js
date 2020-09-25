@@ -10,10 +10,10 @@ function search(a, o) {
         if (a[mid] === o)
             return mid
         else if (o > a[mid]){
-            from = mid + 1;
+            from = mid + 1
         }
         else {// o < a[mid]
-            to = mid - 1;
+            to = mid - 1
         }
     }
 }
