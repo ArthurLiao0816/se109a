@@ -1,7 +1,9 @@
-
-function bsearch(a, o, from, to) {
+//這是迴圈版的二元搜尋法 ~
+function search(a, o) {
     var n = a.length
-
+    var from = 0
+    var to = n
+    
     while (true){
         if (from > to) return null
         var mid = Math.floor((from + to)/2)
@@ -14,11 +16,6 @@ function bsearch(a, o, from, to) {
             to = mid - 1;
         }
     }
-}
-  
-function search(a, o) {
-    var n = a.length
-    return bsearch(a, o, 0, n)
 }
   
 var t = search([1, 3, 4, 6, 7, 8], 4)
