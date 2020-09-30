@@ -93,3 +93,7 @@
 
 7. Git Aliases (超好用!!!)：
     * `git config --global alias.<別名> <原名>`：把某個常用的指令改成短一點的名字，很方便
+    * 用 `p` 代替 `push`，`c` 代替 `commit`<br>
+    ![execute_git_config-global](img_src/execute_git_config-global.png)<br>
+    * 換完之後馬上用<br>
+    ![execute_git_config_result](img_src/execute_git_config_result.png)
