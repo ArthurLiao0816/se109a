@@ -97,3 +97,4 @@
     ![execute_git_config-global](img_src/execute_git_config-global.png)<br>
     * 換完之後馬上用<br>
     ![execute_git_config_result](img_src/execute_git_config_result.png)
+    * 結果太習慣 `push` 了，忘記換(ㄟ嘿 ~
