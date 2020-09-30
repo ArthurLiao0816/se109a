@@ -39,9 +39,6 @@
         ![directory_git](img_src/directory_git.png)
         * 用 `git add -A` 追蹤所有檔案，再用 `git commit -m '0.0'` 提交內容及版本資訊
         ![execute_git_commit](img_src/execute_git_commit.png)
-    * 創建Git倉儲
-        * 設定<br>
-        ![create_repository](img_src/create_repository.png)
     * clone 現有倉儲：
         * 創建Git倉儲
         ![create_repository](img_src/create_repository.png)
