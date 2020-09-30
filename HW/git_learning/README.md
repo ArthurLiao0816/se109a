@@ -48,3 +48,48 @@
         ![execute_git_clone](img_src/execute_git_clone.png)
         * 成功複製 ~<br>
         ![directory_git_clone](img_src/directory_git_clone.png)
+
+2. 檔案 -> Git倉儲：
+    * `git add [檔名]`：預存修改過或新增的檔案
+    * `git status`：顯示檔案狀態
+    * `git status -s`：簡潔的顯示檔案狀態(左邊是預存區のstatus，右邊是工作目錄の)
+    * `git commit -a -m ''`：可以直接提交，不用打 `git add -A`
+    * `rm [檔名]`：從工作目錄刪除檔案
+    * `git rm`：從工作目錄跟預存區中刪除
+    * `git rm --cached`：從預存區中刪除
+    * `*`：前面要加 `\`
+
+3. 提交の歷史：
+    * `git log`：顯示Git倉儲的提交紀錄，最近的在前面
+    * `-p`：顯示修改內容
+    * `-[數字]`：顯示前\[數字\]項資料
+    * `git log --stat`：顯示每筆資料的摘要數據
+
+4. 復原：
+    * 若在上次提交後沒有做過任何檔案修改，馬上將遺忘的檔案加入預存區，然後執行 `git commit --amend` ，就可以將移到預存區的檔案跟上次的提交合併
+    * `git reset HEAD [檔名]`：將\[檔名\]移出預存區
+    * `git checkout -- [檔名]`：將\[檔案\]還原至最初版本
+
+5. 跟遠端協同工作：
+    * `git remote`：顯示遠端庫
+    * `git branch`：顯示分支
+    * `git remote show [遠端名稱]`：顯示特定遠端的資訊
+    * `HEAD`：目前的
+    * `new`：尚未擁有的遠端分支
+    * `stale`：獲取過的分支已經在遠端被移除
+    * `git remote rename A B`：將A遠端重新命名為B遠端
+    * `git remote rm A`：移除A遠端
+    * `git remote add A url`：新增遠端
+
+6. 標籤
+    * `git tag`：列出所有標籤
+    * `git tag -l <pattern>`：列出符合條件的標籤
+    * `git tag -a <tag_name> -m "<tag_discription>"`：建立有註解的標籤
+    * `git show <tag_name>`：顯示標籤訊息
+    * `git tag <tag_name>`：建立沒註解的標籤
+    * `git tag -a <tag_name> <校驗碼>`：對過去的提交貼標籤
+    * `git push origin <tag_name>`：分享標籤
+    * `git push origin --tags`：把所有沒在倉儲庫的標籤全部傳給伺服器，醬別人在clone或fetch伺服器時，就會拿到你的標籤
+
+7. Git Aliases (超好用!!!)：
+    * `git config --global alias.<別名> <原名>`：把某個常用的指令改成短一點的名字，很方便
