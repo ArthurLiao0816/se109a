@@ -49,5 +49,5 @@
         ![clone_url](img_src/clone_url.png)
         * 執行 `git clone https://github.com/ArthurLiao0816/git_test.git`
         ![execute_git_clone](img_src/execute_git_clone.png)
-        * 成功複製 ~
+        * 成功複製 ~<br>
         ![directory_git_clone](img_src/directory_git_clone.png)
