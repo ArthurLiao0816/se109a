@@ -35,12 +35,12 @@
         ![directory_stuff_untracked](img_src/directory_stuff_untracked.png)
         * 喔嗚!*git*生成一個隱藏資料夾在我的專案裡面ㄟ，趕快偷看(嘿 ~ 嘿 ~
         ![directory_stuff](img_src/directory_stuff.png)
-        * 嗯...這蝦毀?不懂。趕緊[逃出來](https://www.youtube.com/watch?v=ro9u_AxB6DY&ab_channel=GlittzyCatDraws)
+        * 嗯...這蝦毀?不懂。趕緊[逃出來](https://www.youtube.com/watch?v=ro9u_AxB6DY&ab_channel=GlittzyCatDraws)<br>
         ![directory_git](img_src/directory_git.png)
         * 用 `git add -A` 追蹤所有檔案，再用 `git commit -m '0.0'` 提交內容及版本資訊
         ![execute_git_commit](img_src/execute_git_commit.png)
     * 創建Git倉儲
-        * 設定
+        * 設定<br>
         ![create_repository](img_src/create_repository.png)
     * clone 現有倉儲：
         * 創建Git倉儲
