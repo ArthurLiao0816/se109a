@@ -98,3 +98,5 @@
     * 換完之後馬上用<br>
     ![execute_git_config_result](img_src/execute_git_config_result.png)
     * 結果太習慣 `push` 了，忘記換(ㄟ嘿 ~
+
+* 在master分支做修改，改完後commit
