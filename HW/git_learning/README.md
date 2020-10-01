@@ -117,7 +117,7 @@
 * `git branch --merged`：列出已經合併的分支
 * `git branch --no-merged`：顯示還沒合併的分支
 
-## 試著用用看(分支的部分 ~
+## 試著用用看 ( 分支的部分 ~
 * 嗯...建新的倉儲好麻煩...就用上課用的八 ~ 在做之前の資料夾長醬 ~<br>
 ![ipm_branch_before](img_src/ipm_branch_before.png)
 * 分支只有一個 ~<br>
@@ -141,3 +141,27 @@
 ## 有系統的branching, merging ~
 * 長期分支 progressive-stability branching：每個分支最多只會分出另一個分支
 * 主題分支 topic branches：一個issue創一個分支
+
+## github 組織和自己合作
+1. 創建一個組織<br>
+![create_organization](img_src/create_organization.png)
+2. fork 組織<br>
+![fork_org](img_src/fork_org.png)
+3. 做些改動，然後提交<br>
+![commit_mylodash_mylodash](img_src/commit_mylodash_mylodash.png)
+4. 在組織端merge成員端的提交<br>
+![commit_confirm](img_src/commit_confirm.png)
+![commit_merged](img_src/commit_merged.png)
+5. `git clone` master and member
+6. 在main資料夾創建待辦事項，然後 `push` 回main端
+![commit_main_member_v01](img_src/commit_main_member_v01.png)<br>
+    * 注意：github已經將預設名稱由master改為main囉 ~
+7. 將main端加為上游<br>
+![git_remote_add](img_src/git_remote_add.png)
+8. `git fetch upstream` 完之後將倉儲中的東西merge到member中<br>
+![git_merge_main](img_src/git_merge_main.png)
+9. 成功拉 ~ ( 完結撒花<br>
+![member_stat_after_merge](img_src/member_stat_after_merge.png)
+
+## 心得
+* 老師在課堂上實作的範例應該屬於主題分支，由main端創建、分配工作，再由member去fetch、merge到自己的主機後就可以進行開發，開發完後將結果傳request給main端，最後再由main端決定是否merge。以前的我只會用add、commit、push來交作業，當時在看\<\<Silicon Vally\>\>的時候就很懷疑：到底，只能上傳檔案室要怎麼在企業裡面做應用阿??這次比較深入的研究，了解到git的分支、合併、以及組織內的一些分流模式之後，對組織應用有一些大概的概念了。
