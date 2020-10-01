@@ -112,7 +112,10 @@
 * `git log --oneline --decorate --graph --all`：查看提交歷史
 * `git checkout -b <branch_name>`：新增 & 切換到新分支
 * *切換分支前，要先確定預存區是空的*
-* `git branch -d <branch_name>`：delete branch
+* `git branch -d <branch_name>`：delete branch ( 如果該分支不是HEAD分支，也沒有完全merge的話，要用 `-D` 才能刪掉窩 ~
+* `git branch -v`：列出所有分支的最近一次提交
+* `git branch --merged`：列出已經合併的分支
+* `git branch --no-merged`：顯示還沒合併的分支
 
 ## 試著用用看(分支的部分 ~
 * 嗯...建新的倉儲好麻煩...就用上課用的八 ~ 在做之前の資料夾長醬 ~<br>
@@ -134,3 +137,7 @@
 7. 這時，只要手動將衝突的檔案進行處理，再commit就行了，下面是這次的實作歷程<br>
 ![ipm_master_merge_process](img_src/ipm_master_merge_process.png)
 8. 最後，再用 `git branch -d nb` 刪掉nb分支
+
+## 有系統的branching, merging ~
+* 長期分支 progressive-stability branching：每個分支最多只會分出另一個分支
+* 主題分支 topic branches：一個issue創一個分支
