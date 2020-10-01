@@ -164,4 +164,4 @@
 ![member_stat_after_merge](img_src/member_stat_after_merge.png)
 
 ## 心得
-* 老師在課堂上實作的範例應該屬於主題分支，由main端創建、分配工作，再由member去fetch、merge到自己的主機後就可以進行開發，開發完後將結果傳request給main端，最後再由main端決定是否merge。以前的我只會用add、commit、push來交作業，當時在看\<\<Silicon Vally\>\>的時候就很懷疑：到底，只能上傳檔案室要怎麼在企業裡面做應用阿??這次比較深入的研究，了解到git的分支、合併、以及組織內的一些分流模式之後，對組織應用有一些大概的概念了。
+* 老師在課堂上實作的範例應該屬於主題分支，由main端創建、分配工作，再由member去fetch、merge到自己的主機後就可以進行開發，開發完後將結果傳request給main端，最後再由main端決定是否merge。以前的我只會用add、commit、push來交作業，當時在看\<\<Silicon Vally\>\>的時候就很懷疑：到底，只能上傳檔案室要怎麼在企業裡面做應用阿??這次比較深入的研究，了解到git的分支、合併、以及組織內的一些分流模式之後，對組織應用有一些大概的概念了。( 覺得爛尾抱歉，想...睡..了.Zzz
