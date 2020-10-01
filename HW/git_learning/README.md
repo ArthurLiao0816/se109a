@@ -1,4 +1,4 @@
-# *git* Learning
+# *Git* Learning
 ---
 
 ## 版本控制系統
@@ -14,8 +14,8 @@
         * 用戶端在跟伺服器要資料的時候，會把整個倉儲做鏡像
         * *缺點*：保密性差
 
-## *git* の特性
-* 記錄檔案快照，而不是差異
+## *Git* の 特性
+* 記錄檔案*快照*，而不是差異
 * 沒網路?沒關係，一樣可以做事，有網路再上傳就好
 * 用 `checksum` 阻止非正當修改檔案
 * 通常都只增加資料(大一用到現在，基本都在 `git push` 傳資料...
@@ -25,7 +25,7 @@
     * `staged`：等著要被上傳中...
     * `untracked`：新增的檔案 ~
 
-## *git* の操作
+## *Git* の 操作
 1. 取得倉儲：
     * 在現有資料夾中初始化倉儲：
         * 進入現成の專案資料夾，執行 `git init`
@@ -98,3 +98,30 @@
     * 換完之後馬上用<br>
     ![execute_git_config_result](img_src/execute_git_config_result.png)
     * 結果太習慣 `push` 了，忘記換(ㄟ嘿 ~
+
+## *Git* の 分支
+* 一個 `commit` 包含：
+    * 指標：代表預存區的東東
+    * 作者名稱 & 電子郵件
+    * 指向親代提交 の 指標 ( 沒有的話表示這是第一個 `commit` )
+* 提交的時候：
+    * 對預存區的檔案*內容*進行 `SHA-1` 雜湊計算，然後將檔案存到Git庫中，算出來的雜湊值會被寫入預存區
+* `git branch <branch_name>`：新增分支
+* `git checkout <branch_name>`：切換分支
+* `git log --online --decorate`：查看分支
+* `git log --oneline --decorate --graph --all`：查看提交歷史
+* `git checkout -b <branch_name>`：新增 & 切換到新分支
+* *切換分支前，要先確定預存區是空的*
+* `git branch -d <branch_name>`：delete branch
+
+## 試著用用看(分支的部分 ~
+* 嗯...建新的倉儲好麻煩...就用上課用的八 ~ 在做之前の資料夾長醬 ~<br>
+![ipm_branch_before](img_src/ipm_branch_before.png)
+* 分支只有一個 ~<br>
+![ipm_origin_branch](img_src/ipm_origin_branch.png)
+1. 建個新的分支然後跑過去 ~ 用用看高級的 `git checkout -b nb` 建完之後長醬 ( 有 \* 的是現在所在的分支<br>
+![ipm_after_branch](img_src/ipm_after_branch.png)
+![](img_src/)
+2. 在做上面紀錄的過程我修改了README的內容，現在就在nb分支提交commit八 ~<br>
+![](img_src/)
+![](img_src/)
