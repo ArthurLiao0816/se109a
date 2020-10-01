@@ -121,8 +121,16 @@
 ![ipm_origin_branch](img_src/ipm_origin_branch.png)
 1. 建個新的分支然後跑過去 ~ 用用看高級的 `git checkout -b nb` 建完之後長醬 ( 有 \* 的是現在所在的分支<br>
 ![ipm_after_branch](img_src/ipm_after_branch.png)
-![](img_src/)
-2. 在做上面紀錄的過程我修改了README的內容，現在就在nb分支提交commit八 ~<br>
-![](img_src/)
-* 在master分支做修改，改完後commit
-![](img_src/)
+2. 在做上面紀錄的過程我修改了README的內容，現在就在nb分支提交commit ~<br>
+    * `git c -a -m 'README.md'`
+3. 再回到master分支<br>
+![ipm_master_change](img_src/ipm_master_change.png)
+4. 在master分支做修改，改完後commit<br>
+![ipm_master_change_ins](img_src/ipm_master_change_ins.png)
+5. 再來將nb分支merge到master分支，這時，血案發生了...<br>
+![ipm_master_merge_conflicts_ins](img_src/ipm_master_merge_conflicts_ins.png)
+6. 系統顯示這次merge出現了conflicts，這是因為merge前我在master分支和nb分支中都有提交對README檔案的變更，系統在conflicts發生時，會自動顯示衝突的部分，像醬<br>
+![ipm_master_merge_conflicts](img_src/ipm_master_merge_conflicts.png)
+7. 這時，只要手動將衝突的檔案進行處理，再commit就行了，下面是這次的實作歷程<br>
+![ipm_master_merge_process](img_src/ipm_master_merge_process.png)
+8. 最後，再用 `git branch -d nb` 刪掉nb分支
