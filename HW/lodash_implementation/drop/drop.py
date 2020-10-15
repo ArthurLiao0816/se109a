@@ -3,5 +3,5 @@ def drop(array, n=1):
     if n > l:
         n = l
     for i in range(0, n):
-        array.pop(0)
+        array.pop(i-i)
     return array
